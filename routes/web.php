@@ -8,6 +8,7 @@ Route::get('/', function () {
         ['name' => 'About', 'url' => '/about'],
         ['name' => 'Contact', 'url' => '/contact'],
     ];
+
     return view('home', compact('navlinks'));
 });
 
@@ -17,8 +18,9 @@ Route::get('/about', function () {
         ['name' => 'About', 'url' => '/about'],
         ['name' => 'Contact', 'url' => '/contact'],
     ];
+
     return view('about', compact('navlinks'));
-}); 
+});
 
 Route::get('/contact', function () {
     $navlinks = [
@@ -26,5 +28,6 @@ Route::get('/contact', function () {
         ['name' => 'About', 'url' => '/about'],
         ['name' => 'Contact', 'url' => '/contact'],
     ];
+
     return view('contact', compact('navlinks'));
 });
